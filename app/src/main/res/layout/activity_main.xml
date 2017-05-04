@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible"
+        android:layout_marginTop="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btn1"
+        android:layout_marginEnd="17dp" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="Enter username here"
+        android:inputType="textPersonName"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tv1"
+        android:layout_alignStart="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv1"
+        android:layout_below="@+id/et1"
+        android:layout_marginTop="33dp"
+        android:text="Password:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et1"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:onClick="OnloginClick"
+        android:text="Login"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnSignupClick"
+        android:text="Or SignUp Here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:visibility="visible"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+</RelativeLayout>
